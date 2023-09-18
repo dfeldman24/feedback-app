@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import Card from '../shared/Card';
-import Button from '../shared/Button';
+import Card from './shared/Card';
+import Button from './shared/Button';
 import RatingSelect from './RatingSelect';
 import { useContext } from 'react';
 import FeedbackContext from '../context/FeedbackContext';
@@ -63,7 +63,7 @@ function FeedbackForm() {
         <div className="input-group">
           <input
             type="text"
-            placeholder="Wrtie a review"
+            placeholder="Write a review"
             onChange={handleTextChange}
             value={text}
           />
